@@ -1,0 +1,43 @@
+.menubar{
+    height:50px;
+    width:100vw;
+    display:flex;
+    justify-content: flex-end;
+    background-color: #ff9900;
+}
+.menubar > i{
+    font-size: 40px;
+    padding:6px;
+    /* padding-left: 20px; */
+}
+.menubar span{
+    height:100%;
+    text-align: center;
+    flex-grow: 2;
+    flex-shrink: 1;
+    padding-top: 2px;
+    font-size: 30px;
+    font-weight: 900;
+    padding:7px;
+}
+.menubar button{
+    height: 100%;
+    width:150px;
+    flex-grow: 1;
+    background-color: #ff9900;
+    border:none;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+.menubar button:hover{
+    background-color: #e68a00;
+}
+.active button{
+    background-color: #e68a00;
+}
+/* .menubar button:active{
+    background-color: #e68a00;
+}
+.menubar > NavLink:active button{
+    background-color: #e68a00;
+} */

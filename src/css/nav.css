@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+    margin-left: 1.8rem;
+    display: inline-block;
+}
+ul{
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+}
+nav{
+    margin-top: 20px;
+}
+.navBar > .label{
+    margin-left: 23px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1d3d56;
+    
+}
+ul li a{
+    color: #1d3d56;
+}
+a:hover{
+    color: black;
+    transition: 0.5s;
+}
+.checkbutton{
+    float: right;
+    margin-right: 15px;
+    margin-top: -2px;
+    display: none;
+}
+#check{
+display: none;
+}
+@media(max-width: 755px){
+    .checkbutton{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -140px;
+        transition: all 1s;
+    }
+    ul li{
+        display: block;
+        margin: 20px;  
+    }
+    #check:checked ~ ul{
+         top: 80px;
+
+    }
+    #check:checked ~ .firstPart{
+        margin-top: 50px !important;
+    }
+}

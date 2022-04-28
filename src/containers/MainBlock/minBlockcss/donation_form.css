@@ -1,0 +1,55 @@
+.donation-form{
+    width:100%;
+    height:90%;
+    /* background-color: antiquewhite; */
+}
+.form{
+    height:500px;
+    width:400px;
+    /* top:50px;
+    left:0px; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10px;
+    margin:auto;
+    margin-top: 50px;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 10px black;
+}
+.form > .heading{
+    font-size: 30px;
+    font-weight: 900;
+    margin:10px 0px;
+    /* text-align: center; */
+}
+.form > input{
+    height:30px;
+    font-size: 16px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid black;
+}
+.form > .time-details{
+    font-size: 18px;
+    color:red;
+}
+.time-field{
+    height:20px;
+    background-color: lightgray;
+}
+.form > .savebtn{
+    height:40px;
+    width:150px;
+    align-self: flex-end;
+    background-color: antiquewhite;
+    box-shadow: 0 2px 5px black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.form > .savebtn:hover{
+    background-color: rgb(248, 215, 173);
+}

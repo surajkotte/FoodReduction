@@ -1,0 +1,9 @@
+.history{
+    height:calc(100vh - 50px);
+    /* height:700px; */
+    /* height:90vh; */
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+}
