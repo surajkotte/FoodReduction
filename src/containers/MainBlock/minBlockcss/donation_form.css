@@ -4,8 +4,8 @@
     /* background-color: antiquewhite; */
 }
 .form{
-    height:500px;
-    width:400px;
+    height:44rem;
+    width:35rem;
     /* top:50px;
     left:0px; */
     display:flex;
@@ -35,10 +35,6 @@
 .form > .time-details{
     font-size: 18px;
     color:red;
-}
-.time-field{
-    height:20px;
-    background-color: lightgray;
 }
 .form > .savebtn{
     height:40px;

@@ -1,21 +1,12 @@
-import '../css/Auth.css'
+import '../css/Auth.css';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import {useState,useContext} from 'react'
+import {useState,useContext} from 'react';
 import {createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
-import auth from './auth'
+import auth from './auth';
 import context from '../context/auth-context';
-// import { useCookies } from 'react-cookie';
 function Authentication() {
-  // const [cookies, setCookie] = useCookies(['LogInOrOut']);
-  // setCookie('LogInOrOut',{
-  //   isLoggedin:false,
-  //   userid:'',
-  //   userName:''
-  // },{
-  //   path:"/"
-  // });
   const ctx = useContext(context);
   const [Flipcard,useFlip]= useState(false);
   const [AuthDetails, setAuthDetails] = useState({
@@ -67,7 +58,6 @@ function Authentication() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode+" "+errorMessage);
         setAuthDetails({
           userName:'',
           Password:''

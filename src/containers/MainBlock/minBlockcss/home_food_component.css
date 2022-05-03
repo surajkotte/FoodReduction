@@ -1,0 +1,61 @@
+.home-food-component{
+    border-radius: 20px;
+    height:200px;
+    width: 35rem;
+    padding:20px;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:1px solid black;
+    box-shadow: 0 2px 10px black;
+    /* background-color: antiquewhite; */
+}
+.food-details{
+    display:flex;
+    justify-content: space-between;
+}
+.food-details > .food-name{
+    font-size:xx-large;
+    font-weight: 600;
+}
+.food-details > .quantity{
+    font-size: larger;
+    font-weight: 600;
+}
+.home-food-component > .addr{
+    color:grey;
+}
+.food-component-footer{
+    padding-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+}
+.food-component-footer > .timer{
+    color:red;
+}
+button.req-food{
+    height:40px;
+    width:200px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 2px 5px black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button.req-food:hover{
+    background-color: rgb(248, 215, 173);
+}
+button.cancel-req{
+    height:40px;
+    width:200px;
+    font-size: 20px;
+    background-color: limegreen;
+    box-shadow: 0 2px 5px black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

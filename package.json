@@ -13,7 +13,8 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.18.8",
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.20.0",
+    "browserify-zlib": "^0.2.0",
     "cors": "^2.8.5",
     "date-fns": "^2.28.0",
     "express": "^4.17.3",
@@ -28,6 +29,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-simple-timefield": "^3.2.5",
+    "react-timer-hook": "^3.0.5",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

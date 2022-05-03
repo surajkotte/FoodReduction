@@ -1,4 +1,4 @@
-import './App.css';
+import '../minBlockcss/App.css'
 import {Routes,Route} from 'react-router-dom';
 import Menubar from './menubar';
 import Home from './home';
@@ -11,6 +11,7 @@ function App() {
       <Menubar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/donationform' element={<DonationForm/>}/>
         <Route path='/history' element={<History/>}/>
       </Routes>

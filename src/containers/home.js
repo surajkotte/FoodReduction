@@ -4,31 +4,30 @@ import Info from './Info';
 import Contact from './Contact';
 import './style.css'
 import Authentication from './Authentication';
-import {BrowserRouter as Router, Switch , Route, Redirect, NavLink} from 'react-router-dom';
 function Home() {
   return (
       <div>
             <div className="" style={{position:"absolute",left:"0",right:"0"}}>
-                  <div class="navbar-container" style={{paddingTop:"0px"}}>
+                  <div className="navbar-container" style={{paddingTop:"0px"}}>
                           <Navbar />
                   </div>
 
-                  <div class="information-part">
+                  <div className="information-part">
                         <Intro />
                   </div>
 
-                  <div class="container-fluid">
+                  <div className="container-fluid">
                          <Info />
                   </div>
                   <div className="container-fluid" id = "login" style = {{marginTop:"7rem",display: "flex",justifyContent: "center",alignItems: "center"}}>
                       <Authentication/>
                   </div>
 
-                  <div class="" id = "bottom-section">
+                  <div className="" id = "bottom-section">
                            <Contact />
                   </div>
            </div>
-           </div>
+       </div>
   );
 }
 

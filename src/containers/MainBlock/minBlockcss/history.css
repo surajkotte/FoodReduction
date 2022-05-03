@@ -1,9 +1,33 @@
 .history{
-    height:calc(100vh - 50px);
-    /* height:700px; */
-    /* height:90vh; */
+    height:calc(100vh - 70px);
     width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    position: relative;
+}
+.history > .D{
+    position: fixed;
+    top:80px;
+    right:47px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.history > .R{
+    position: fixed;
+    top:110px;
+    right:30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.history-container{
+    /* width:100%; */
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    /* overflow-x: hidden; */
 }
