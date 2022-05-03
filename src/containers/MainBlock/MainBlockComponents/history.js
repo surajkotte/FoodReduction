@@ -1,16 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import '../minBlockcss/history.css';
 import HistoryFoodComponent from './History_food_component';
 
-function History(props){
-    // useEffect((
-    //     fetch("http://localhost:3000/requested").then((res)=>{
-    //         console.log("History request");
-    //         console.log(res.json().personalDetails);
-    //     }).catch((err)=>{
-    //         console.log(err);
-    //     })
-    // ),[])
+function History(){
+    const [historyData, setHistoryData] = useState([]); 
+    useEffect(()=>{
+        fetch("http://localhost:3000/requested").then((res)=>{
+            console.log("History request");
+            res.json().then((data)=>{
+                let arr=[...data]
+                setHistoryData(arr);
+            })
+
+        })
+        console.log(historyData)
+    },[])
     return (
         <div className="history">
             <span className='D'>D : Donated</span>
